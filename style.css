@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Aplica a fonte Bebas Neue aos títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Aplica a fonte Jost ao restante do texto */
+body, p, .navbar, .carousel-caption {
+    font-family: 'Jost', sans-serif;
+}
+
+.carousel-container {
+    max-height: 700px;
+    overflow: hidden;
+    
+}
+.carousel-item img {
+    height: 800px;
+    object-fit: cover;
+}
+.carousel-item {
+    position: relative;
+}
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Sombramento do carrossel */
+}
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    text-align: left;
+    max-width: 50%;
+}
+.carousel-caption h5 {
+    font-size: 3rem;
+}
+.carousel-caption p {
+    font-size: 1.5rem;
+}
+
+/* Estilo para a seção de Cards */
+.card-container {
+    display: flex;
+    overflow-x: auto; /* Adiciona rolagem horizontal se necessário */
+    gap: 20px; /* Espaçamento entre os cards */
+    padding: 200px 0; /* Adiciona padding para os cards */
+}
+.card {
+    min-width: 400px; /* Largura mínima para cada card */
+    max-width: 300px; /* Largura máxima para cada card */
+    flex-shrink: 0; /* Evita que os cards encolham */
+}
+
+
+.footer {
+    background: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    /* margin-top: 20px; */
+    padding: 10px 0;
+}
