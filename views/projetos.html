@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projetos</title>
+    <link rel="stylesheet" href="/public/styles/style.css" />
+  </head>
+  <body class="body_proj">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="historia.html">História</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a id="bnt_contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container_proj">
+      <div class="proj_img">
+        <img src="/public/images/mais-gibi.jpg" alt="" />
+      </div>
+
+      <div class="proj_text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+          bibendum mi vitae scelerisque tempus. Nam sit amet ante pretium,
+          finibus tellus nec, feugiat ex. Fusce non mauris eget mi convallis
+          aliquet ut ut quam. Sed suscipit vulputate ligula sed porttitor. Nulla
+          nec nisi scelerisque, pharetra enim quis, scelerisque libero.
+          Curabitur ac aliquet eros. Vestibulum ante ipsum primis in faucibus
+          orci luctus et ultrices posuere cubilia curae; Integer semper ac nunc
+          at dignissim. Pellentesque ipsum odio, vehicula quis facilisis ac,
+          cursus non urna.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById('bnt_contato')
+        .addEventListener('click', function () {
+          window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth',
+          });
+        });
+    </script>
+  </body>
+</html>

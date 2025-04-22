@@ -191,10 +191,18 @@
 }
 
 header {
-    background: #191EEC;
+    background: #33333B;
     color: white;
     padding: 10px;
     text-align: center;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
 }
 
 .footer > a{
@@ -202,34 +210,51 @@ header {
     color: white;
 }
 
-/* Navegação */
-.container__navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+.footer > p{
+    margin: 0;
+    color: white;
 }
 
-.navbar_logo{
-    width: 70px;
-    height: 70px;
+/* Navegação */
+.container__navbar {
+    display: flex;
+    justify-content: space-between; /* Distribui os itens com espaços entre eles */
+    align-items: center;
+    padding: 10px;
+    width: 82%; /* Ajuste a largura do container para deixá-lo mais estreito e centralizado */
+    margin: 0 auto; /* Centraliza o container na tela */
+}
+
+.navbar_logo {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
     
 }
 
-.navbar_logo > img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-
-.navbar_links{
+.navbar_logo > a > #logo{ 
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    width: 85px;
+    height: 80px;
+    border-radius: 1rem;
 }
 
-.navbar_links > a{ 
+.navbar_logo > #logo1{
+    width: 300%;
+    height: 100%;
+    margin-right: 250px;
+}
+
+.navbar_links {
+    display: flex;
+    gap: 50px; /* Espaçamento entre os links */
+    position: absolute; /* Posiciona os links no centro */
+    left: 50%; /* Move os links para o meio da tela */
+    transform: translateX(-50%); /* Centraliza os links em relação ao seu ponto central */
+}
+
+.navbar_links > a {
     font-weight: 500;
     text-decoration: none;
     color: black;
@@ -322,12 +347,4 @@ body, p, .navbar, .carousel-caption {
     flex-shrink: 0; /* Evita que os cards encolham */
 }
 
-.footer {
-    background: black;
-    color: white;
-    width: 100%;
-    text-align: center;
-    position: relative;
-    /* margin-top: 20px; */
-    padding: 10px 0;
-}
+
