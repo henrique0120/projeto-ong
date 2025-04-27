@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/styles/principal.css" />
+    <!-- Link para as fontes Bebas Neue e Jost -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.3/examples/carousel/"
+    />
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.3/examples/footers/"
+    />
+
+    <script src="/docs/5.3/assets/js/color-modes.js"></script>
+
+    <link
+      href="/docs/5.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      href="/docs/5.3/assets/img/favicons/apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <link
+      rel="icon"
+      href="/docs/5.3/assets/img/favicons/favicon-32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="/docs/5.3/assets/img/favicons/favicon-16x16.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json" />
+    <link
+      rel="mask-icon"
+      href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg"
+      color="#712cf9"
+    />
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico" />
+    <!-- Link para o Bootstrap Icons -->
+    <title>Início | Associação</title>
+  </head>
+  <body>
+    <header>
+      <nav class="container__navbar">
+        <div class="navbar_logo">
+          <img id="logo1" src="/public/images/logo1.jpg" alt="" />
+
+          <a href="principal.html"
+            ><img id="logo" src="/public/images/logo.png" alt=""
+          /></a>
+        </div>
+
+        <div class="navbar_links">
+          <a href="sobre.html">Sobre</a>
+          <a href="projetos.html">Projetos</a>
+          <a id="bnt_contato">Fale Conosco</a>
+          <a href="doe.html">doe</a>
+        </div>
+      </nav>
+    </header>
+    <!-- Carrossel -->
+    <article>
+      <session>
+        <div class="carousel-container">
+          <div
+            id="carouselExample"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://img.freepik.com/fotos-gratis/pessoas-empilhando-as-maos-juntas-no-parque_53876-63293.jpg?ga=GA1.1.442348838.1728325227&semt=ais_hybrid"
+                  class="d-block w-100"
+                  alt="Imagem 1"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Nossa Missão</h5>
+                  <p>Trabalhamos para um futuro melhor!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://img.freepik.com/fotos-gratis/maos-de-arvores-que-crescem-mudas_1150-44332.jpg?ga=GA1.1.442348838.1728325227&semt=ais_hybrid"
+                  class="d-block w-100"
+                  alt="Imagem 2"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Ajude-nos a Transformar</h5>
+                  <p>Juntos, podemos fazer a diferença.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://img.freepik.com/fotos-gratis/feche-o-trabalho-em-equipe-voluntario-de-pessoas-colocando-o-dedo-nas-maos-em-forma-de-estrela-juntospilha-de-maosunidade-e-trabalho-em-equipe-no-dia-mundial-do-meio-ambiente_640221-299.jpg?ga=GA1.1.442348838.1728325227&semt=ais_hybrid"
+                  class="d-block w-100"
+                  alt="Imagem 3"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Seja Voluntário</h5>
+                  <p>Venha fazer parte dessa causa!</p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Próximo</span>
+            </button>
+
+            <style>
+              .carousel-control-prev,
+              .carousel-control-next {
+                bottom: 31%;
+              }
+            </style>
+          </div>
+        </div>
+      </session>
+      <!-- Sessão de Cards -->
+      <section>
+        <div class="container_content">
+          <div class="container__resumo">
+            <div class="resumo_left">
+              <img src="/public/images/logo3.png" alt="" />
+            </div>
+
+            <div class="resumo_right">
+              <div class="resumo_text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam posuere tristique felis, mattis iaculis mi congue in.
+                  Nunc eget lectus tempus, consectetur dui non, egestas leo.
+                  Cras venenatis commodo leo, vel venenatis massa porta ut.
+                  Phasellus sit amet arcu eleifend, molestie risus eget, semper
+                  lorem. In ante mauris, tristique in est sit amet, scelerisque
+                  faucibus tellus. Maecenas pulvinar cursus turpis a
+                  scelerisque. Proin eleifend elit ac lorem tincidunt maximus.
+                </p>
+              </div>
+              <div class="card_button_div">
+                <button class="card_button">SAIBA MAIS</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="container__card">
+            <div class="card_img">
+              <img src="/public/images/projeto_Geloteca.jpg" alt="" />
+            </div>
+            <div class="card_text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                posuere tristique felis, mattis iaculis mi congue in. Nunc eget
+                lectus tempus, consectetur dui non, egestas leo. Cras venenatis
+                commodo leo, vel venenatis massa porta ut. Phasellus sit amet
+                arcu eleifend, molestie risus eget, semper lorem. In ante
+                mauris, tristique in est sit amet, scelerisque faucibus tellus.
+                Maecenas pulvinar cursus turpis a scelerisque. Proin eleifend
+                elit ac lorem tincidunt maximus.
+              </p>
+            </div>
+            <div class="card_button_div">
+              <button class="card_button">SAIBA MAIS</button>
+            </div>
+          </div>
+
+          <div class="container__card">
+            <div class="card_img">
+              <img src="/public/images/mais-gibi.jpg" alt="" />
+            </div>
+            <div class="card_text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                posuere tristique felis, mattis iaculis mi congue in. Nunc eget
+                lectus tempus, consectetur dui non, egestas leo. Cras venenatis
+                commodo leo, vel venenatis massa porta ut. Phasellus sit amet
+                arcu eleifend, molestie risus eget, semper lorem. In ante
+                mauris, tristique in est sit amet, scelerisque faucibus tellus.
+                Maecenas pulvinar cursus turpis a scelerisque. Proin eleifend
+                elit ac lorem tincidunt maximus.
+              </p>
+            </div>
+            <div class="card_button_div">
+              <button class="card_button">SAIBA MAIS</button>
+            </div>
+          </div>
+
+          <div class="container__card">
+            <div class="card_img">
+              <img src="/public/images/projeto_doacao_livros.jpg" alt="" />
+            </div>
+            <div class="card_text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                posuere tristique felis, mattis iaculis mi congue in. Nunc eget
+                lectus tempus, consectetur dui non, egestas leo. Cras venenatis
+                commodo leo, vel venenatis massa porta ut. Phasellus sit amet
+                arcu eleifend, molestie risus eget, semper lorem. In ante
+                mauris, tristique in est sit amet, scelerisque faucibus tellus.
+                Maecenas pulvinar cursus turpis a scelerisque. Proin eleifend
+                elit ac lorem tincidunt maximus.
+              </p>
+            </div>
+            <div class="card_button_div">
+              <button class="card_button">SAIBA MAIS</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container__faça_parte">
+          <h1>FAÇA PARTE!</h1>
+          <div class="faça_parte_cards">
+            <div class="card">
+              <h1>Empresas</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent a est eget nibh dapibus interdum. Duis ac neque a
+                tellus congue accumsan in ut ipsum. Donec vitae nulla sit amet
+                felis consequat imperdiet.
+              </p>
+              <button class="button_card">SAIBA MAIS</button>
+            </div>
+            <div class="card">
+              <h1>Poder Público</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent a est eget nibh dapibus interdum. Duis ac neque a
+                tellus congue accumsan in ut ipsum. Donec vitae nulla sit amet
+                felis consequat imperdiet.
+              </p>
+              <button class="button_card">SAIBA MAIS</button>
+            </div>
+            <div class="card">
+              <h1>Artistas</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent a est eget nibh dapibus interdum. Duis ac neque a
+                tellus congue accumsan in ut ipsum. Donec vitae nulla sit amet
+                felis consequat imperdiet.
+              </p>
+              <button class="button_card">SAIBA MAIS</button>
+            </div>
+            <div class="card">
+              <h1>Voluntariado</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent a est eget nibh dapibus interdum. Duis ac neque a
+                tellus congue accumsan in ut ipsum. Donec vitae nulla sit amet
+                felis consequat imperdiet.
+              </p>
+              <button class="button_card">SAIBA MAIS</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <!--
+
+    <div class="container_content">
+      <div class="container_proj_left proj-left">
+        <div class="proj_img">
+          <img src="/public/images/projeto_Geloteca.jpg" alt="" />
+        </div>
+
+        <div class="proj_text">
+          <p>
+            Esse e o Projeto Geloteca SP, o qual fui convidado a ser membro pelo
+            fundador João Belmonte pela minha persistência e dedicação com o
+            projeto que busca incentivar a leitura e o acesso à cultura em
+            comunidades periféricas e áreas com menos acesso a livros. O nome
+            GeloTeca vem, pois realizamos a reciclagem de geladeiras velhas
+            trazendo vida a sua estrutura com grafites que chamam a tenção não
+            só dos mais jovem, mas de todos da comunidade que acabam se
+            interessando pela leitura e pegando os livros oferecidos que ficam
+            dentro da geladeira. Também sendo utilizada como painel de
+            informações de acontecimentos no bairro como eventos culturais.
+          </p>
+        </div>
+      </div>
+
+      <div class="container_proj proj-center">
+        <div class="proj_img">
+          <img src="/public/images/mais-gibi.jpg" alt="" />
+        </div>
+
+        <div class="proj_text">
+          <p>
+            Esse é o projeto mais gibis que faz parte do Projeto GeloTeca SP.
+            Que busca incentivar a leitura de crianças e adolescentes nas
+            periferias, porque eles se interessam em gibis, mangás, fanzine e
+            arte, que trazem ilustrações que chamam a tenção da garotada e
+            também as histórias que acabam os incentivando a ler para entender o
+            contexto das figuras do gibi. Eu Trouxe esse projeto para o Barraco
+            Galeria Arteducação com a ajuda da minha esposa entramos em contato
+            com o João Belmonte, fundador do projeto Geloteca SP. E conseguimos
+            a instalação de um geladeira cheia de livros que fica exposta na
+            frente da Associação para que todos possam pegar gibis e livros para
+            ler.
+          </p>
+        </div>
+      </div>
+
+      <div class="container_proj_right proj-right">
+        <div class="proj_text">
+          <p>
+            A Torre Cultural é um sonho ligado ao projeto Barraco Galeria
+            Arteducação, que visa construir um prédio com salas para aulas de
+            computação, idiomas e exposições de arte, promovendo intercâmbio
+            cultural com artistas do Brasil e do mundo. Localizada na Vila
+            Flávia, a ideia se inspira na ONG São Mateus em Movimento, que já
+            leva arte às ruas e tornou-se atração turística. A torre, no centro
+            da favela de São Mateus, representa resistência e orgulho. A
+            proposta é transformar a região em um ponto cultural com arte, lazer
+            e visibilidade para a comunidade. A arte da torre simboliza o
+            Brasil, com o arco-íris representando a diversidade. As inspirações
+            visuais vêm da caixa de lápis Faber-Castell e da capa de um álbum da
+            banda Pink Floyd. O projeto também se inspira em iniciativas como o
+            Favela.
+          </p>
+        </div>
+        <div class="proj_img">
+          <img src="/public/images/projeto_torry.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="container_proj_bike proj-center">
+        <div class="proj_img">
+          <img src="/public/images/projeto_bike.jpg" alt="" />
+        </div>
+
+        <div class="proj_text">
+          <p>
+            O projeto Bike na Favela está nascendo para oferecer meios de
+            locomoção mais sustentáveis e acessíveis para crianças e jovens da
+            comunidade, em parceria com uma bicicletaria que irá apadrinhar a
+            iniciativa. Para usar as bikes, as crianças precisam ter boas notas
+            e frequência escolar. Caso não estejam indo bem, a família será
+            contatada para buscar melhorias. Os moradores também poderão
+            utilizar as bicicletas para lazer e deslocamento dentro da
+            comunidade. O projeto ainda está em fase de implementação, mas já
+            gera grande expectativa entre os moradores. A inspiração veio da
+            capa do CD do Criolo — “é a bike no grau”, que representa um cavalo
+            empinando — e também da bicicleta Caiçara que tenho há anos. Esse
+            projeto tem potencial para transformar a vida dos moradores com um
+            transporte sustentável, acessível e saudável.
+          </p>
+        </div>
+      </div>
+
+      <div class="container_proj_livros proj-left">
+        <div class="proj_img">
+          <img src="/public/images/projeto_doacao_livros.jpg" alt="" />
+        </div>
+
+        <div class="proj_text_livros">
+          <p>
+            Em contato com diversas galerias consegui uma doação de livros de
+            arte ao ar livre, os famosos grafites apoiado pela Galeria de Arte
+            A7MA que fica no Beco do Batman Localizado na Vila Madalena. Com
+            esses livros em mãos fiz a distribuição na comunidade para crianças
+            que se interessam por desenhos e pintura, alimentando os seus sonhos
+            para que talvez no futuro tenham a chance de se tornarem artistas, e
+            ter suas obras expostas aqui no projeto Barraco Galeria Art ou em
+            outras galerias parceiras da associação.
+          </p>
+        </div>
+      </div>
+
+      <div class="container_proj proj-center">
+        <div class="proj_img">
+          <img src="/public/images/projeto_doacao.png" alt="" />
+        </div>
+
+        <div class="proj_text_doacao">
+          <p>
+            Um projeto importantíssimo que já está impactando os moradores, o
+            Matando a fome na favela já tem ajudado muita gente por aqui graças
+            a doação de cestas básicas pela ONG São Mateus em Movimento que
+            realiza as doações para a gente. Chegando no nosso espaço realizamos
+            uma triagem e distribuímos para moradores em situação de
+            vulnerabilidade alimentar.
+          </p>
+        </div>
+      </div>
+
+      <div class="container_proj_right proj-right">
+        <div class="proj_text_choque">
+          <p>
+            Um dos nossos parceiro, a galeria Choque Cultural, ao qual fui
+            convidado a ser membro do conselho consultivo de artistas, assim
+            criando uma ponte entre artistas do Jardim Rodolfo Pirani em São
+            Mateus para o Jardim Paulista na região central de São Paulo.
+          </p>
+        </div>
+        <div class="proj_img">
+          <img src="/public/images/projeto_choque.png" alt="" />
+        </div>
+      </div>
+    </div>
+    -->
+    <hr />
+    <div class="container">
+      <footer class="pt-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden"
+                  >Email address</label
+                >
+                <input
+                  id="newsletter1"
+                  type="email"
+                  class="form-control"
+                  placeholder="Email address"
+                />
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+        >
+          <p>&copy; 2025 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#" aria-label="Instagram"
+                ><svg class="bi" width="24" height="24">
+                  <use xlink:href="#instagram" /></svg
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#" aria-label="Facebook"
+                ><svg class="bi" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="#facebook" /></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script>
+      document
+        .getElementById('bnt_contato')
+        .addEventListener('click', function () {
+          window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth',
+          });
+        });
+    </script>
+    <script
+      defer
+      src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

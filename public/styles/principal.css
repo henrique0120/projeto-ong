@@ -5,10 +5,20 @@
     box-sizing: border-box;
 }
 
-.container_content {
+/*.container_content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    gap: 50px; 
+}*/
+
+.container_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 20px;
     margin-bottom: 70px;
     gap: 50px; 
@@ -190,12 +200,13 @@
     color: black;
 }
 
-header {
+/*header {
     background: #33333B;
     color: white;
     padding: 10px;
     text-align: center;
 }
+*/
 
 .footer{
     display: flex;
@@ -215,14 +226,187 @@ header {
     color: white;
 }
 
+/* resumo */
+
+.container__resumo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 40%; /* Aumenta para caber a imagem + texto decentemente */
+    margin: 0 auto; /* Centraliza a caixa na tela */
+    border: 2px solid black;
+    gap: 20px; /* Espaço entre a imagem e o texto */
+    padding: 20px; /* Espaço interno bonito */
+}
+
+.resumo_left {
+    flex-shrink: 0; /* A imagem não diminui */
+    width: 150px;
+    height: 150px;
+}
+
+.resumo_left > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem cobrir o espaço sem distorcer */
+}
+
+.resumo_right {
+    display: flex;
+    align-items: flex-start; /* Alinha o texto e o botão à esquerda */
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    flex: 1; /* O texto ocupa o restante do espaço */
+}
+
+.resumo_text p {
+    margin: 0 0 20px 0; /* Espaço embaixo do texto para o botão */
+    text-align: justify; /* Opcional: deixa o texto alinhadinho dos dois lados */
+}
+
+.resumo_button {
+    align-self: flex-start;
+}
+
+.resumo_button > .card_button {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card_button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* resumo */
+
+/* cards*/
+.container__card{
+    font-size: large;
+    padding: 20px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.card_text{
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+.card_img{
+    align-self: flex-start;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.card_img > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_button_div {
+    align-self: flex-start;
+}
+
+.card_button_div > .card_button{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card_button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* cards*/
+
+/* contribuição session */
+
+.container__faça_parte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.container__faça_parte > h1{
+    font-size: 80px;
+}
+
+.faça_parte_cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    border: 2px solid red;
+    height: 400px;
+    width: 80%;
+}
+
+.faça_parte_cards > .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 33%;
+    border: 2px solid blue;
+}
+
+.faça_parte_cards > .card > p{
+    text-align: justify;
+}
+
+.faça_parte_cards > .card > .button_card{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card > .button_card:hover {
+    background-color: black;
+    color: white;
+}
+
+/* contribuição session */
+
 /* Navegação */
 .container__navbar {
     display: flex;
-    justify-content: space-between; /* Distribui os itens com espaços entre eles */
+    justify-content: space-between; 
     align-items: center;
     padding: 10px;
-    width: 82%; /* Ajuste a largura do container para deixá-lo mais estreito e centralizado */
-    margin: 0 auto; /* Centraliza o container na tela */
+    width: 82%; 
+    margin: 0 auto; 
 }
 
 .navbar_logo {
@@ -241,6 +425,7 @@ header {
 }
 
 .navbar_logo > #logo1{
+    display: flex;
     width: 300%;
     height: 100%;
     margin-right: 250px;
@@ -248,10 +433,10 @@ header {
 
 .navbar_links {
     display: flex;
-    gap: 50px; /* Espaçamento entre os links */
-    position: absolute; /* Posiciona os links no centro */
-    left: 50%; /* Move os links para o meio da tela */
-    transform: translateX(-50%); /* Centraliza os links em relação ao seu ponto central */
+    gap: 50px; 
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
 }
 
 .navbar_links > a {
@@ -259,8 +444,6 @@ header {
     text-decoration: none;
     color: black;
 }
-
-
 
 /* Navegação */
 
@@ -301,6 +484,7 @@ body, p, .navbar, .carousel-caption {
 .carousel-container {
     max-height: 550px;
     overflow: hidden;
+    margin-bottom: 20px;
     
 }
 .carousel-item img {
