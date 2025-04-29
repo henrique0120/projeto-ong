@@ -16,12 +16,51 @@
 
 .container_content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 70px;
-    gap: 50px; 
+    padding-bottom: 70px;
+    gap: 20px; 
+}
+
+.container_inter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    width: 100;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.container_inter > h1{
+    font-size: 80px;
+}
+
+.content_esquerda{
+    margin-left: 7%;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_entrevista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+}
+
+.content_direita{
+    gap: 20px; 
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .container_proj {
@@ -208,25 +247,13 @@
 }
 */
 
-.footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-}
-
-.footer > a{
-    text-decoration: none;
-    color: white;
-}
-
-.footer > p{
-    margin: 0;
-    color: white;
-}
 
 /* resumo */
+
+.resumo{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 .container__resumo {
     display: flex;
@@ -237,6 +264,7 @@
     border: 2px solid black;
     gap: 20px; /* Espaço entre a imagem e o texto */
     padding: 20px; /* Espaço interno bonito */
+
 }
 
 .resumo_left {
@@ -298,8 +326,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 85%;
 }
+
 
 .card_text{
     margin-bottom: 8px;
@@ -308,15 +337,26 @@
 
 .card_img{
     align-self: flex-start;
-    width: 150px;
-    height: 150px;
+    width: 30%;
+    height: 40%;
     margin-bottom: 15px;
+}
+
+.card_bike{
+    align-self: flex-start;
+    width: 60%;
+    height: 40%;
+    margin-bottom: 15px;
+}
+
+.card_bike > img{
+    width: 100%;
+    height: 100%;
 }
 
 .card_img > img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 .card_button_div {
@@ -335,6 +375,8 @@
     transition: background-color 0.3s, color 0.3s;
 }
 
+
+
 .card_button:hover {
     background-color: white;
     color: black;
@@ -349,7 +391,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 60px;
+    padding: 30px;
+    background-image: url(https://th.bing.com/th/id/R.1ee09e4b2af4bfb20f09b6b81d08b069?rik=5f4M6vElObjCag&riu=http%3a%2f%2fwww.imagens.usp.br%2fwp-content%2fuploads%2f20062012maosFotoMarcosSantos012.jpg&ehk=t8PxxAfr5Cfk5j%2bsXrFO2PkFqXK32ft74N%2fIFKtld9Y%3d&risl=&pid=ImgRaw&r=0);
+    background-size: 100% 120%; 
+    color: white;
+    background-position: center;
 }
 
 .container__faça_parte > h1{
@@ -361,19 +407,19 @@
     flex-direction: row;
     justify-content: center;
     gap: 50px;
-    border: 2px solid red;
     height: 400px;
     width: 80%;
 }
 
 .faça_parte_cards > .card{
+    color: white;
+    background-color: #181A1B;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 40px;
     width: 33%;
-    border: 2px solid blue;
 }
 
 .faça_parte_cards > .card > p{
@@ -381,9 +427,9 @@
 }
 
 .faça_parte_cards > .card > .button_card{
-    background-color: white;
-    color: black;
-    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
     padding: 20px 30px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -393,18 +439,24 @@
 }
 
 .card > .button_card:hover {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 /* contribuição session */
 
 /* Navegação */
+
+header{
+    background-color: #181A1B;
+    color: white;
+}
+
 .container__navbar {
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    padding: 10px;
+    padding: 4px;
     width: 82%; 
     margin: 0 auto; 
 }
@@ -417,32 +469,35 @@
     
 }
 
-.navbar_logo > a > #logo{ 
-    display: flex;
+#logo { 
     width: 85px;
     height: 80px;
     border-radius: 1rem;
 }
 
-.navbar_logo > #logo1{
+#logo1 {
     display: flex;
-    width: 300%;
+    width: 20%;
     height: 100%;
-    margin-right: 250px;
 }
 
 .navbar_links {
     display: flex;
-    gap: 50px; 
     position: absolute; 
     left: 50%; 
     transform: translateX(-50%); 
 }
 
 .navbar_links > a {
+    padding: 30px;
     font-weight: 500;
     text-decoration: none;
-    color: black;
+    color: white;
+}
+
+#doe{
+    padding: 30px;
+    background-color: blue;
 }
 
 /* Navegação */
@@ -484,8 +539,6 @@ body, p, .navbar, .carousel-caption {
 .carousel-container {
     max-height: 550px;
     overflow: hidden;
-    margin-bottom: 20px;
-    
 }
 .carousel-item img {
     height: 800px;

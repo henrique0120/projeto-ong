@@ -1,9 +1,15 @@
 /* Navegação */
+
+header{
+    background-color: #181A1B;
+    color: white;
+}
+
 .container__navbar {
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    padding: 10px;
+    padding: 4px;
     width: 82%; 
     margin: 0 auto; 
 }
@@ -32,16 +38,21 @@
 
 .navbar_links {
     display: flex;
-    gap: 50px; 
     position: absolute; 
     left: 50%; 
     transform: translateX(-50%); 
 }
 
 .navbar_links > a {
+    padding: 30px;
     font-weight: 500;
     text-decoration: none;
-    color: black;
+    color: white;
+}
+
+#doe{
+    padding: 30px;
+    background-color: blue;
 }
 
 /* Navegação */

@@ -41,6 +41,7 @@
 .navbar_links > a {
     font-weight: 500;
     text-decoration: none;
+    background-color: blue;
     color: black;
 }
 
