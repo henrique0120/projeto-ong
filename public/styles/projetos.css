@@ -1,9 +1,15 @@
 /* Navegação */
+
+header{
+    background-color: #181A1B;
+    color: white;
+}
+
 .container__navbar {
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    padding: 10px;
+    padding: 4px;
     width: 82%; 
     margin: 0 auto; 
 }
@@ -16,32 +22,171 @@
     
 }
 
-.navbar_logo > a > #logo{ 
-    display: flex;
+#logo { 
     width: 85px;
     height: 80px;
     border-radius: 1rem;
 }
 
-.navbar_logo > #logo1{
+#logo1 {
     display: flex;
-    width: 300%;
+    width: 20%;
     height: 100%;
-    margin-right: 250px;
 }
 
 .navbar_links {
     display: flex;
-    gap: 50px; 
     position: absolute; 
     left: 50%; 
     transform: translateX(-50%); 
 }
 
 .navbar_links > a {
+    padding: 30px;
     font-weight: 500;
     text-decoration: none;
-    color: black;
+    color: white;
+}
+
+#doe{
+    padding: 30px;
+    background-color: blue;
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Aplica a fonte Bebas Neue aos títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', sans-serif;
+    caret-color: transparent;
+}
+
+/* Aplica a fonte Jost ao restante do texto */
+body, p, .navbar, .carousel-caption {
+    font-family: 'Jost', sans-serif;
+    caret-color: transparent;
 }
 
 /* Navegação */
+
+/*  conteúdo  */
+.container__banner{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    color: #191EEC;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    height: 100vh;  
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 20), rgba(0, 0, 0, 20)), url(/public/images/bike.png);
+    height: 400px;
+    width: 100%;
+}
+
+.title {
+    color: blue;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.box-vermelho {
+    width: 600px;
+    height: 150px;
+    background-color: red;
+  }
+
+.banner_text{
+    width: 50%;
+}
+
+.container__banner h1{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+    font-size: 100px;
+}
+
+.text{
+    width: 50%;
+    height: 50%;
+    background-color: red;
+}
+
+.hero {
+    position: relative;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/public/images/bike.png);
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    color: #191EEC;
+  }
+
+  .overlay > img{
+    max-width: 30%;
+    width: 100%;
+  }
+
+  .overlay > h1{
+    font-weight: 500;
+    font-size: 100px;
+  }
+
+  .content-wrapper {
+    background-color: #191EEC; 
+    position: relative;
+    z-index: 1;
+    padding-top: 150px; 
+    min-height: 600px;
+  }
+
+  .text-box {
+    position: absolute;
+    top: -100px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f0f8f0;
+    padding: 30px;
+    width: 60%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    z-index: 2;
+    border-radius: 8px;
+  }
+
+  

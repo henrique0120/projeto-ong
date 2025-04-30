@@ -14,16 +14,6 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/5.3/examples/carousel/"
-    />
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/5.3/examples/footers/"
-    />
-
-    <script src="/docs/5.3/assets/js/color-modes.js"></script>
 
     <link
       href="/docs/5.3/dist/css/bootstrap.min.css"
@@ -31,31 +21,13 @@
       integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
     />
 
-    <link
-      rel="apple-touch-icon"
-      href="/docs/5.3/assets/img/favicons/apple-touch-icon.png"
-      sizes="180x180"
-    />
-    <link
-      rel="icon"
-      href="/docs/5.3/assets/img/favicons/favicon-32x32.png"
-      sizes="32x32"
-      type="image/png"
-    />
-    <link
-      rel="icon"
-      href="/docs/5.3/assets/img/favicons/favicon-16x16.png"
-      sizes="16x16"
-      type="image/png"
-    />
     <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json" />
+
     <link
-      rel="mask-icon"
-      href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg"
-      color="#712cf9"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
-    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico" />
-    <!-- Link para o Bootstrap Icons -->
+
     <title>Início | Associação</title>
   </head>
   <body>
@@ -91,7 +63,7 @@
               <li class="nav-item active">
                 <a
                   class="nav-link d-flex align-items-center"
-                  href="../views/sobre.html"
+                  href="../views/principal.html"
                 >
                   <img id="logo" src="../public/images/logo.png" alt="Logo" />
                 </a>
@@ -99,28 +71,44 @@
               <li class="nav-item">
                 <a class="nav-link" href="../views/sobre.html">Sobre</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../views/projetos.html">Projetos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../views/doe.html">Doe</a>
-              </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
                   id="dropdown07"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
+                  data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  Projetos
                 </a>
-                <div class="dropdown-menu" aria-labelledby="dropdown07">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
+                <ul class="dropdown-menu p-0" aria-labelledby="dropdown07">
+                  <li>
+                    <a class="dropdown-item" href="../views/projetos/bike.html"
+                      >Bike na Favela</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../views/projetos/torry.html">A Torry Cultural </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../views/projetos/gibis.html">Mais + Gibis</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../views/projetos/geloteca.html">Projeto Geloteca</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../views/projetos/doe.html">Projeto Doe Livro</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../views/projetos/cesta.html">Projeto Cesta Básica</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="nav-link" id="bnt_contato">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/doe.html">Doe</a>
               </li>
             </ul>
           </div>
@@ -491,98 +479,73 @@
     <hr />
     <div class="container">
       <footer class="pt-5">
-        <div class="row">
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary"
-                  >Features</a
-                >
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">About</a>
-              </li>
-            </ul>
-          </div>
+        <div class="container">
+          <!-- Adiciona limites e centralização -->
+          <div
+            class="row d-flex align-items-center justify-content-center text-center pb-4"
+          >
+            <!-- Logo -->
+            <div class="col-auto me-5">
+              <img
+                style="width: 100px; height: auto"
+                src="../public/images/logo.png"
+                alt="Logo"
+              />
+            </div>
 
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary"
-                  >Features</a
-                >
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">About</a>
-              </li>
-            </ul>
-          </div>
+            <!-- Endereço -->
+            <div class="col-md-3">
+              <h2 class="fs-5">NOSSO ENDEREÇO</h2>
+              <p class="mb-0">
+                R. Padre Justino, 653 - Vila Pirajussara, São Paulo - SP,
+                05580-095
+              </p>
+            </div>
 
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary"
-                  >Features</a
-                >
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">About</a>
-              </li>
-            </ul>
-          </div>
+            <!-- E-mail -->
+            <div class="col-md-3">
+              <h2 class="fs-5">CONTATO</h2>
 
-          <div class="col-md-5 offset-md-1 mb-3">
-            <form>
-              <h5>Subscribe to our newsletter</h5>
-              <p>Monthly digest of what's new and exciting from us.</p>
-              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden"
-                  >Email address</label
-                >
-                <input
-                  id="newsletter1"
-                  type="email"
-                  class="form-control"
-                  placeholder="Email address"
-                />
-                <button class="btn btn-primary" type="button">Subscribe</button>
+              <div class="d-flex align-items-center">
+                <a class="link-body-emphasis me-2" href="#" aria-label="Email">
+                  <i class="bi bi-envelope" style="font-size: 1.5rem"></i>
+                </a>
+                <p class="mb-0 fs-5">associacaobarraco@hotmail.com</p>
               </div>
-            </form>
+
+              <div class="d-flex align-items-center">
+                <a
+                  class="link-body-emphasis me-2"
+                  href="#"
+                  aria-label="WhatsApp"
+                >
+                  <i class="bi bi-whatsapp" style="font-size: 1.5rem"></i>
+                </a>
+                <p class="mb-0 fs-5">(11)230293910</p>
+              </div>
+            </div>
+
+            <!-- Redes sociais -->
+            <div class="col-md-3">
+              <h2 class="fs-5">NOS SIGA NAS REDES SOCIAIS!</h2>
+              <ul class="list-unstyled d-flex justify-content-center mt-2">
+                <li class="me-3">
+                  <a class="link-body-emphasis" href="#" aria-label="Instagram">
+                    <i class="bi bi-instagram" style="font-size: 1.5rem"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="link-body-emphasis" href="#" aria-label="Facebook">
+                    <i class="bi bi-facebook" style="font-size: 1.5rem"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
         <div
-          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+          class="d-flex flex-column flex-sm-row justify-content-center py-2 my-2 border-top"
         >
           <p>&copy; 2025 Company, Inc. All rights reserved.</p>
           <ul class="list-unstyled d-flex">
@@ -612,24 +575,6 @@
           });
         });
     </script>
-    <script
-      defer
-      src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-    ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      window.jQuery ||
-        document.write(
-          '<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>'
-        );
-    </script>
-    <script src="../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
   </body>
 </html>

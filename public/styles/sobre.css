@@ -22,18 +22,16 @@ header{
     
 }
 
-.navbar_logo > a > #logo{ 
-    display: flex;
+#logo { 
     width: 85px;
     height: 80px;
     border-radius: 1rem;
 }
 
-.navbar_logo > #logo1{
+#logo1 {
     display: flex;
-    width: 300%;
+    width: 20%;
     height: 100%;
-    margin-right: 250px;
 }
 
 .navbar_links {
@@ -56,6 +54,40 @@ header{
 }
 
 /* Navegação */
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Aplica a fonte Bebas Neue aos títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', sans-serif;
+    caret-color: transparent;
+}
+
+/* Aplica a fonte Jost ao restante do texto */
+body, p, .navbar, .carousel-caption {
+    font-family: 'Jost', sans-serif;
+    caret-color: transparent;
+}
 
 .container_hist {
     padding: 40px 20px;
