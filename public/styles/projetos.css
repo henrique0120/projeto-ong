@@ -92,51 +92,6 @@ body, p, .navbar, .carousel-caption {
 /* Navegação */
 
 /*  conteúdo  */
-.container__banner{
-    display: flex;
-    flex-direction: column;
-    border: 2px solid black;
-    color: #191EEC;
-    justify-content: center;
-    align-items: center;
-    background-size: 100%;
-    height: 100vh;  
-    background-size: cover;
-    background-position: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 20), rgba(0, 0, 0, 20)), url(/public/images/bike.png);
-    height: 400px;
-    width: 100%;
-}
-
-.title {
-    color: blue;
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-}
-
-.box-vermelho {
-    width: 600px;
-    height: 150px;
-    background-color: red;
-  }
-
-.banner_text{
-    width: 50%;
-}
-
-.container__banner h1{
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    font-weight: 500;
-    font-size: 100px;
-}
-
-.text{
-    width: 50%;
-    height: 50%;
-    background-color: red;
-}
-
 .hero {
     position: relative;
     height: 400px;
@@ -158,7 +113,170 @@ body, p, .navbar, .carousel-caption {
     color: #191EEC;
   }
 
-  .overlay > img{
+  /* torry */
+
+  .hero_torry{
+    position: relative;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/public/images/bike.png);
+  }
+
+  .overlay_torry{
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    color: #191EEC;
+  }
+
+  .text-box_torry {
+    position: absolute;
+    top: -70px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f0f8f0;
+    padding: 45px;
+    text-align: justify;
+    width: 60%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    z-index: 2;
+    border-radius: 8px;
+  }
+
+  .text-box_torry > p{
+    font-size: 22px;
+  }
+
+  .content-wrapper_torry {
+    background-color: #191EEC; 
+    position: relative;
+    z-index: 1;
+    padding-top: 150px; 
+    min-height: 785px;
+  }
+
+  .overlay > #torry{
+    max-width: 10%;
+    width: 100%;
+  }
+
+  .overlay_torry > img{
+    max-width: 10%;
+    width: 100%;
+  }
+
+   /* torry */
+
+   /* gibis*/
+
+   .overlay > #gibis{
+    max-width: 25%;
+    width: 100%;
+  }
+
+  .content-wrapper_gibis{
+    background-color: #191EEC; 
+    position: relative;
+    z-index: 1;
+    padding-top: 150px; 
+    min-height: 453px;
+  }
+
+
+/* gibis*/
+
+/* geloteca */
+
+.overlay > #geloteca{
+    max-width: 12%;
+    width: 100%;
+  }
+
+  .content-wrapper_geloteca{
+    background-color: #191EEC; 
+    position: relative;
+    z-index: 1;
+    padding-top: 150px; 
+    min-height: 521px;
+  }
+
+  .text-box_geloteca {
+    position: absolute;
+    top: -65px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f0f8f0;
+    padding: 45px;
+    text-align: justify;
+    width: 60%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    z-index: 2;
+    border-radius: 8px;
+  }
+
+  .text-box_geloteca > p{
+    font-size: 22px;
+  }
+
+
+/* geloteca */
+
+/* cesta básica */
+
+.content-wrapper_cesta{
+    background-color: #191EEC; 
+    position: relative;
+    z-index: 1;
+    padding-top: 150px; 
+    min-height: 338px;
+  }
+
+/* cesta básica */
+
+/* livros */
+
+.overlay > #livros{
+    max-width: 15%;
+    width: 100%;
+}
+
+.content-wrapper_livros{
+    background-color: #191EEC; 
+    position: relative;
+    z-index: 1;
+    padding-top: 150px; 
+    min-height: 414px;
+}
+
+.text-box_livros{
+    position: absolute;
+    top: -40px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f0f8f0;
+    padding: 45px;
+    text-align: justify;
+    width: 60%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    z-index: 2;
+    border-radius: 8px;
+}
+
+.text-box_livros > p{
+    font-size: 22px;
+  }
+
+/* livros */
+
+
+.overlay > img{
     max-width: 30%;
     width: 100%;
   }
@@ -173,7 +291,7 @@ body, p, .navbar, .carousel-caption {
     position: relative;
     z-index: 1;
     padding-top: 150px; 
-    min-height: 600px;
+    min-height: 650px;
   }
 
   .text-box {
@@ -182,11 +300,63 @@ body, p, .navbar, .carousel-caption {
     left: 50%;
     transform: translateX(-50%);
     background: #f0f8f0;
-    padding: 30px;
+    padding: 45px;
+    text-align: justify;
     width: 60%;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     z-index: 2;
     border-radius: 8px;
   }
 
-  
+  .text-box > p{
+    font-size: 22px;
+  }
+
+  /*conteúdo*/
+
+/*contribua*/
+
+.container__contribua{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 185px;
+    color: white;
+    background-color: #181A1B;
+    border: 2px solid black;
+}
+
+
+.contribua_right > button{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+.contribua_left{
+    width: 40%;
+}
+
+.contribua_left > h1{
+    font-size: 80px
+}
+
+.contribua_left > p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+/*contribua*/
