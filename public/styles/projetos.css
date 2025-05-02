@@ -120,7 +120,7 @@ body, p, .navbar, .carousel-caption {
     height: 400px;
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/public/images/bike.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/public/images/overlay_torry.png);
   }
 
   .overlay_torry{
@@ -176,6 +176,14 @@ body, p, .navbar, .carousel-caption {
 
    /* gibis*/
 
+  .hero_gibis{
+      position: relative;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/public/images/overlay_gibis.jpg);
+  }
+
    .overlay > #gibis{
     max-width: 25%;
     width: 100%;
@@ -197,6 +205,14 @@ body, p, .navbar, .carousel-caption {
 .overlay > #geloteca{
     max-width: 12%;
     width: 100%;
+  }
+
+  .hero_geloteca{
+    position: relative;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/public/images/overlay_geloteca.png);
   }
 
   .content-wrapper_geloteca{
@@ -230,6 +246,14 @@ body, p, .navbar, .carousel-caption {
 
 /* cesta básica */
 
+.hero_cesta{
+  position: relative;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/public/images/overlay_cesta.png);
+}
+
 .content-wrapper_cesta{
     background-color: #191EEC; 
     position: relative;
@@ -245,6 +269,14 @@ body, p, .navbar, .carousel-caption {
 .overlay > #livros{
     max-width: 15%;
     width: 100%;
+}
+
+.hero_livros{
+  position: relative;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/public/images/overlay_livros.jpg);
 }
 
 .content-wrapper_livros{
