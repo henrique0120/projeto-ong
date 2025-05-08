@@ -91,48 +91,10 @@ body, p, .navbar, .carousel-caption {
 
 /* Navegação */
 
-/* qrcode */
 
-.container__qrcode{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    width: 50%;
-}
-
-.container__qrcode > h1{
-    margin-top: 50px;
-    font-size: 100px;
-}
-
-.container__qrcode > p{
-   text-align: center;
-   font-size: 20px;
-  
-}
-
-.qrcode_apoiadores {
-    display: flex;
-    gap: 10px; 
-    margin-top: 50px;
-    border: 2px solid black;
-    padding: 15px;
-  }
-  
-  .qrcode_apoiadores > img {
-    width: 250px;
-    height: 250px;
-    object-fit: contain;
-  }
-
-/* qrcode */
-
-.hero{
+.hero {
     position: relative;
     height: 400px;
-    margin-bottom: 20px;
     background-size: cover;
     background-position: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/public/images/bike.png);
@@ -157,10 +119,3 @@ body, p, .navbar, .carousel-caption {
   text-shadow: 2px 2px 4px black;
 font-size: 150px;
   }
-
-  .container__qrcode > h1{
-    
-    color: blue;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px black;
-}

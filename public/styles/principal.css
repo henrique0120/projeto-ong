@@ -23,17 +23,18 @@
     gap: 20px; 
 }
 
-.container_inter{
+.container_blog{
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
-    border: 2px solid black;
+    
     width: 100;
     height: 300px;
     margin-bottom: 20px;
 }
 
-.container_inter > h1{
+.container_blog > h1{
     font-size: 80px;
 }
 
