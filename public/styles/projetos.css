@@ -97,7 +97,7 @@ body, p, .navbar, .carousel-caption {
     height: 400px;
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/public/images/bike.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/bike.png);
   }
 
   .overlay {
@@ -120,7 +120,7 @@ body, p, .navbar, .carousel-caption {
     height: 400px;
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/public/images/overlay_torry.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/overlay_torry.png);
   }
 
   .overlay_torry{
@@ -181,7 +181,7 @@ body, p, .navbar, .carousel-caption {
       height: 400px;
       background-size: cover;
       background-position: center;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/public/images/overlay_gibis.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/overlay_gibis.jpg);
   }
 
    .overlay > #gibis{
@@ -212,7 +212,7 @@ body, p, .navbar, .carousel-caption {
     height: 400px;
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/public/images/overlay_geloteca.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/overlay_geloteca.png);
   }
 
   .content-wrapper_geloteca{
@@ -251,7 +251,7 @@ body, p, .navbar, .carousel-caption {
   height: 400px;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/public/images/overlay_cesta.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/overlay_cesta.png);
 }
 
 .content-wrapper_cesta{
@@ -276,7 +276,7 @@ body, p, .navbar, .carousel-caption {
     height: 400px;
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/public/images/overlay_livros.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/overlay_livros.jpg);
 }
 
 .content-wrapper_livros{
