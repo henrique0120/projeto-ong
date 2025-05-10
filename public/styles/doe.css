@@ -33,7 +33,7 @@ header{
     display: flex;
     width: 20%;
     height: 100%;
-    margin-right: 200px
+    margin-right: 200px 
 }
 
 .navbar_links {
@@ -182,7 +182,7 @@ body, p, .navbar, .carousel-caption {
     margin-bottom: 20px;
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/public/images/bike.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/bike.png);
   }
 
   .overlay{
