@@ -26,6 +26,7 @@ header{
     width: 85px;
     height: 80px;
     border-radius: 1rem;
+    transform: translateX(calc(-50% - 225px));
 }
 
 #logo1 {
@@ -53,8 +54,6 @@ header{
     background-color: blue;
 }
 
-
-
 nav{
     display: flex;
     justify-content: center;
@@ -77,7 +76,14 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Aplica a fonte Bebas Neue aos títulos */
+.dropdown-menu .dropdown-item {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+/* Navegação */
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Bebas Neue', sans-serif;
     caret-color: transparent;
@@ -89,11 +95,9 @@ body, p, .navbar, .carousel-caption {
     caret-color: transparent;
 }
 
-/* Navegação */
-
 /*  conteúdo  */
 .hero {
-    position: relative;
+    
     height: 400px;
     background-size: cover;
     background-position: center;
@@ -101,7 +105,7 @@ body, p, .navbar, .carousel-caption {
   }
 
   .overlay {
-    position: absolute;
+    
     top: 0;
     left: 0; 
     width: 100%;
@@ -116,7 +120,6 @@ body, p, .navbar, .carousel-caption {
   /* torry */
 
   .hero_torry{
-    position: relative;
     height: 400px;
     background-size: cover;
     background-position: center;
@@ -124,7 +127,6 @@ body, p, .navbar, .carousel-caption {
   }
 
   .overlay_torry{
-    position: absolute;
     top: 0;
     left: 0; 
     width: 100%;
@@ -177,7 +179,6 @@ body, p, .navbar, .carousel-caption {
    /* gibis*/
 
   .hero_gibis{
-      position: relative;
       height: 400px;
       background-size: cover;
       background-position: center;
@@ -208,7 +209,7 @@ body, p, .navbar, .carousel-caption {
   }
 
   .hero_geloteca{
-    position: relative;
+    
     height: 400px;
     background-size: cover;
     background-position: center;
@@ -247,7 +248,7 @@ body, p, .navbar, .carousel-caption {
 /* cesta básica */
 
 .hero_cesta{
-  position: relative;
+  
   height: 400px;
   background-size: cover;
   background-position: center;
@@ -272,7 +273,7 @@ body, p, .navbar, .carousel-caption {
 }
 
 .hero_livros{
-  position: relative;
+  
     height: 400px;
     background-size: cover;
     background-position: center;
@@ -319,9 +320,10 @@ body, p, .navbar, .carousel-caption {
   }
 
   .content-wrapper {
+    position: relative;
     background-color: #191EEC; 
     position: relative;
-    z-index: 1;
+    z-index: 0;
     padding-top: 150px; 
     min-height: 650px;
   }
@@ -336,7 +338,7 @@ body, p, .navbar, .carousel-caption {
     text-align: justify;
     width: 60%;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    z-index: 2;
+    z-index: -1;
     border-radius: 8px;
   }
 

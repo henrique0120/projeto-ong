@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sobre | Associação</title>
     <link rel="stylesheet" href="../public/styles/sobre.css" />
+    <link rel="icon" href="../public/images/logo.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost&display=swap"
       rel="stylesheet"
@@ -20,22 +21,27 @@
   </head>
   <body>
     <header>
-      <nav
+       <nav
         class="navbar navbar-expand-lg navbar-dark bg-181A1B p-0"
-        style="height: 90px; margin-right: 15%"
+        style="height: 90px"
       >
-        <div class="container d-flex justify-content-center">
-          <img
-            id="logo1"
-            src="../public/images/logopreto.jpg"
-            class="navbar-brand m-0"
-            href="#"
-          />
+        <div
+          class="container position-relative d-flex justify-content-center align-items-center"
+        >
+          <img id="logo1" src="../public/images/logopreto.jpg" href="#" />
+
+          <a
+            class="position-absolute start-50 translate-middle-x me-5"
+            href="../views/principal.html"
+          >
+            <img id="logo" src="../public/images/logo.png" alt="Logo" />
+          </a>
+
           <button
             class="navbar-toggler"
             type="button"
-            data-toggle="collapse"
-            data-target="#navbarsExample07"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample07"
             aria-controls="navbarsExample07"
             aria-expanded="false"
             aria-label="Toggle navigation"
@@ -47,15 +53,11 @@
             class="collapse navbar-collapse justify-content-center"
             id="navbarsExample07"
           >
-            <ul class="navbar-nav mx-auto d-flex align-items-center">
-              <li class="nav-item active">
-                <a
-                  class="nav-link d-flex align-items-center"
-                  href="../views/principal.html"
-                >
-                  <img id="logo" src="../public/images/logo.png" alt="Logo" />
-                </a>
-              </li>
+            <ul
+              class="navbar-nav position-absolute start-50 translate-middle-x"
+            >
+              <li class="nav-item active"></li>
+
               <li class="nav-item">
                 <a class="nav-link" href="../views/sobre.html">Sobre</a>
               </li>
@@ -104,9 +106,9 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
+            <!--<li class="nav-item">
                 <a class="nav-link" href="blog.html">Blog</a>
-              </li>
+              </li>-->
               <li>
                 <a class="nav-link" id="bnt_contato">Contato</a>
               </li>
@@ -122,84 +124,32 @@
     <article>
       <div class="container container_hist my-5">
         <h1 class="text-center mb-4">Nossa História</h1>
-
-        <section>
-          <h3><i class="bi bi-lightbulb-fill"></i> Formação e Propósito</h3>
-          <p>
-            Nossa missão nasceu do desejo de formar lideranças e desenvolver
-            habilidades técnicas para a profissionalização no mercado de
-            trabalho. Um exemplo é o projeto
-            <strong>São Mateus em Movimento</strong> e a
-            <strong>Barraco Galeria Art</strong>, que desde o início já tinha os
-            dois pés no social.
-          </p>
-          <img
-            src="../public/images/formacao.jpg"
-            alt="Formação e propósito"
-            class="img-fluid rounded mt-3"
-          />
-        </section>
-
-        <section>
-          <h3><i class="bi bi-handshake-fill"></i> Nosso Desafio</h3>
-          <p>
-            Nosso maior desafio é encontrar novos parceiros, patrocinadores e
-            apoiadores, que se envolvam voluntária ou financeiramente para
-            fortalecer o projeto.
-          </p>
-
-          <div class="icons">
-            <img
-              src="../public/images/projeto_Geloteca.jpg"
-              alt="Parcerias e apoio"
-              class="img-fluid rounded mt-3"
-            />
-            <img
-              src="../public/images/projeto_choque.png"
-              alt="Parcerias e apoio"
-              class="img-fluid rounded mt-3"
-            />
-            <img
-              src="../public/images/projeto_movimento.png"
-              alt="Parcerias e apoio"
-              class="img-fluid rounded mt-3"
-            />
-            <img
-              id="a7ma"
-              src="../public/images/projeto_a7ma.png"
-              alt="Parcerias e apoio"
-              class="img-fluid rounded mt-3"
-            />
-          </div>
-          <img
-            src="../public/images/parcerias.jpg"
-            alt="Parcerias e apoio"
-            class="img-fluid rounded mt-3"
-          />
-        </section>
-
-        <section>
-          <h3><i class="bi bi-megaphone-fill"></i> Ativismo na Prática</h3>
-          <p>
-            Enxergamos nosso trabalho como um ato de ativismo. Mesmo em um dos
-            bairros mais perigosos de São Mateus, levamos cultura, literatura,
-            apoio às famílias, cestas básicas e consciência cidadã.
-          </p>
-        </section>
-
         <section>
           <h3><i class="bi bi-person-fill"></i> Quem Somos</h3>
           <p>
-            Cleiton Alexandre Jesus dos Santos, natural de Junco, na cidade de
-            Jacobina - Bahia, é o fundador da Associação Barraco Galeria
-            ArtEducação. Morador de São Mateus, na zona leste de São Paulo, vive
-            no Jardim Rodolfo Pirani — espaço que abriga também a galeria que
-            deu origem à associação. Artista plástico e grafiteiro, Cleiton tem
-            na arte uma forma de transformação social e pessoal, inspirando-se
-            principalmente na figura de seu pai. Com uma trajetória marcada pela
-            resistência e criatividade, ele carrega como lema a frase: “Nunca
-            desista de você”, que traduz a essência de sua caminhada e do
-            trabalho realizado pela ONG.
+            A Barraco Galeria de Arte nasceu da minha história. Eu morei em um
+            barraco de madeira, ali no Jardim Colonial, ao lado de um córrego
+            com uma tubulação enorme. Para mim, aquilo era mais do que um lugar:
+            era um portal, um globo mágico onde eu podia flutuar com a
+            imaginação. Esse barraco virou símbolo da minha trajetória e, hoje,
+            da galeria. Sempre gostei de desenhar. Estudei arte plástica,
+            caligrafia, grafite, história da arte, arte visual, contemporânea,
+            moda... E um dia pensei: "Não existe nenhuma galeria com o nome
+            'Barraco Galeria de Arte'!". Como sou uma pessoa autêntica e meus
+            amigos sempre disseram que eu devia falar do que eu vivo, decidi
+            assumir minha história — com orgulho. Mas a galeria não poderia
+            existir sem um propósito social. Principalmente dentro da favela.
+            Por isso, a Barraco Galeria de Arte também é um projeto de
+            transformação. Trabalhamos com arte e cultura, sim, mas também com
+            alimentação, tecnologia, educação e formação de novas lideranças.
+            Nossa galera é feita de mentes pensantes: artistas, músicos,
+            professores, ativistas, advogados, assistentes sociais, moradores de
+            rua, moleques de rua... gente comum que acredita na mudança. Mais do
+            que um espaço de exposição, a Barraco Galeria de Arte virou uma
+            associação. Um projeto em constante construção, fermentando ideias
+            boas, puras, verdadeiras e funcionais. Porque acreditamos que a
+            educação muda o ser humano, transforma o lugar onde moramos e pode
+            mudar o mundo.
           </p>
 
           <img
@@ -207,32 +157,72 @@
             alt="Nego Tinho"
             class="img-fluid rounded mt-3"
           />
+          <img
+            src="../public/images/frente.jpg"
+            alt="Nego Tinho"
+            class="img-fluid rounded mt-3"
+            style="width: 325px"
+          />
         </section>
 
         <section>
-          <h3><i class="bi bi-stars"></i> A Nossa Maior Recompensa</h3>
+          <h3><i class="bi bi-person-fill"></i> Missão</h3>
           <p>
-            O que nos dá mais satisfação é ver o reconhecimento dos moradores:
-            crianças, jovens, adultos e idosos participando e fortalecendo o
-            projeto com doações e presença. Vemos um futuro estruturado e forte.
+            Transformar vidas por meio da arte, cultura, educação e ação social,
+            promovendo a profissionalização, o protagonismo e a formação de
+            lideranças dentro das periferias, especialmente no bairro de São
+            Mateus. Valorizamos histórias reais, fomentamos o acesso à cultura e
+            criamos pontes entre a criatividade e a transformação social.
           </p>
-          <div class="content">
-            <img
-              src="../public/images/crianca1.jpg"
-              alt="Ações sociais"
-              class="img-fluid rounded"
-            />
+        </section>
 
-            <video class="rounded" width="400" height="550" controls>
-              <source src="../public/videos/projeto.mp4" type="video/mp4" />
-            </video>
+        <section>
+          <h3><i class="bi bi-search"></i> Visão</h3>
+          <p>
+            Ser uma referência nacional e internacional como galeria e projeto
+            social enraizado na favela, que inspira outras periferias a se
+            reconhecerem como potências criativas, educativas e humanas.
+            Construir um futuro em que a arte seja um direito acessível, e a
+            comunidade, protagonista da própria mudança.
+          </p>
+        </section>
 
-            <img
-              src="../public/images/crianca2.jpg"
-              alt="Ações sociais"
-              class="img-fluid rounded"
-            />
-          </div>
+        <section>
+          <h3><i class="bi bi-person-fill"></i> Valores</h3>
+          <ul>
+            <li>
+              Autenticidade: Nossa origem é nossa força. A favela, a história
+              pessoal e o cotidiano inspiram e sustentam nosso fazer artístico e
+              social.
+            </li>
+
+            <li>
+              Transformação: Acreditamos no poder da educação, da arte e da
+              cultura como ferramentas de mudança individual e coletiva.
+            </li>
+
+            <li>
+              Acolhimento: Trabalhamos com e para as pessoas. Famílias,
+              crianças, jovens e idosos são parte ativa do nosso projeto.
+            </li>
+
+            <li>
+              Resistência: Atuamos em um território vulnerável, levando
+              dignidade, alimento, livros e consciência social como atos de
+              ativismo.
+            </li>
+
+            <li>
+              Colaboração: Valorizamos parcerias, apoios e o trabalho voluntário
+              como forma de crescimento mútuo e fortalecimento da rede.
+            </li>
+
+            <li>
+              Raízes: Honramos nossas referências, ancestrais e líderes
+              comunitários que pavimentaram o caminho da luta e da arte nas
+              periferias.
+            </li>
+          </ul>
         </section>
 
         <!--
@@ -305,7 +295,7 @@
                 <a class="link-body-emphasis me-2" href="#" aria-label="Email">
                   <i class="bi bi-envelope" style="font-size: 1.5rem"></i>
                 </a>
-                <p class="mb-0 fs-5">associacaobarraco@hotmail.com</p>
+                <p class="mb-0 fs-5">associacaobarracogaleriaart@gmail.com</p>
               </div>
 
               <div class="d-flex align-items-center">

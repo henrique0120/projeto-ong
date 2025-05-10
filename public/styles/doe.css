@@ -26,17 +26,18 @@ header{
     width: 85px;
     height: 80px;
     border-radius: 1rem;
+    transform: translateX(calc(-50% - 225px));
 }
 
 #logo1 {
     display: flex;
     width: 20%;
     height: 100%;
+    margin-right: 200px
 }
 
 .navbar_links {
     display: flex;
-    position: absolute; 
     left: 50%; 
     transform: translateX(-50%); 
 }
@@ -56,6 +57,8 @@ header{
 
 
 nav{
+    position: relative;
+    z-index: 1030;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,6 +80,51 @@ nav ul li a {
     font-weight: bold;
 }
 
+@media (max-width: 991.98px) {
+  #logo1 {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    margin-right: 73px
+}
+
+  #logo { 
+    width: 85px;
+    height: 80px;
+    border-radius: 1rem;
+    transform: none;
+}
+
+  .navbar-toggler {
+    margin-left: auto;
+  }
+
+  .navbar-nav{
+    background-color: #181A1B;
+    width: 100%;
+  }
+
+  .collapse.navbar-collapse.show {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    z-index: 1040;
+    transition: none;
+    
+    min-height: 215px; 
+  }
+
+}
+
+.dropdown-menu .dropdown-item {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+/* Navegação */
+
 /* Aplica a fonte Bebas Neue aos títulos */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Bebas Neue', sans-serif;
@@ -89,7 +137,7 @@ body, p, .navbar, .carousel-caption {
     caret-color: transparent;
 }
 
-/* Navegação */
+
 
 /* qrcode */
 

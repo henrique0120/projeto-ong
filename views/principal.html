@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../public/styles/principal.css" />
+    <link rel="icon" href="../public/images/logo.png" />
     <!-- Link para as fontes Bebas Neue e Jost -->
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost&display=swap"
@@ -34,20 +35,25 @@
     <header>
       <nav
         class="navbar navbar-expand-lg navbar-dark bg-181A1B p-0"
-        style="height: 90px; margin-right: 15%"
+        style="height: 90px"
       >
-        <div class="container d-flex justify-content-center">
-          <img
-            id="logo1"
-            src="../public/images/logopreto.jpg"
-            class="navbar-brand m-0"
-            href="#"
-          />
+        <div
+          class="container position-relative d-flex justify-content-center align-items-center"
+        >
+          <img id="logo1" src="../public/images/logopreto.jpg" />
+
+          <a
+            class="position-absolute start-50 translate-middle-x me-5"
+            href="../views/principal.html"
+          >
+            <img id="logo" src="../public/images/logo.png" alt="Logo" />
+          </a>
+
           <button
             class="navbar-toggler"
             type="button"
-            data-toggle="collapse"
-            data-target="#navbarsExample07"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample07"
             aria-controls="navbarsExample07"
             aria-expanded="false"
             aria-label="Toggle navigation"
@@ -59,15 +65,11 @@
             class="collapse navbar-collapse justify-content-center"
             id="navbarsExample07"
           >
-            <ul class="navbar-nav mx-auto d-flex align-items-center">
-              <li class="nav-item active">
-                <a
-                  class="nav-link d-flex align-items-center"
-                  href="../views/principal.html"
-                >
-                  <img id="logo" src="../public/images/logo.png" alt="Logo" />
-                </a>
-              </li>
+            <ul
+              class="navbar-nav position-absolute start-50 translate-middle-x"
+            >
+              <li class="nav-item active"></li>
+
               <li class="nav-item">
                 <a class="nav-link" href="../views/sobre.html">Sobre</a>
               </li>
@@ -116,9 +118,9 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
+            <!--<li class="nav-item">
                 <a class="nav-link" href="blog.html">Blog</a>
-              </li>
+              </li>-->
               <li>
                 <a class="nav-link" id="bnt_contato">Contato</a>
               </li>
@@ -143,7 +145,7 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  src="https://img.freepik.com/fotos-gratis/pessoas-empilhando-as-maos-juntas-no-parque_53876-63293.jpg?ga=GA1.1.442348838.1728325227&semt=ais_hybrid"
+                  src="../public/images/livros_0.jpg"
                   class="d-block w-100"
                   alt="Imagem 1"
                 />
@@ -154,7 +156,7 @@
               </div>
               <div class="carousel-item">
                 <img
-                  src="https://img.freepik.com/fotos-gratis/maos-de-arvores-que-crescem-mudas_1150-44332.jpg?ga=GA1.1.442348838.1728325227&semt=ais_hybrid"
+                  src="../public/images/frente_2.png"
                   class="d-block w-100"
                   alt="Imagem 2"
                 />
@@ -165,7 +167,7 @@
               </div>
               <div class="carousel-item">
                 <img
-                  src="https://img.freepik.com/fotos-gratis/feche-o-trabalho-em-equipe-voluntario-de-pessoas-colocando-o-dedo-nas-maos-em-forma-de-estrela-juntospilha-de-maosunidade-e-trabalho-em-equipe-no-dia-mundial-do-meio-ambiente_640221-299.jpg?ga=GA1.1.442348838.1728325227&semt=ais_hybrid"
+                  src="../public/images/geloteca_2.jpg"
                   class="d-block w-100"
                   alt="Imagem 3"
                 />
@@ -233,7 +235,8 @@
                 </p>
               </div>
               <div class="card_button_div">
-                <button class="card_button">SAIBA MAIS</button>
+                <button class="card_button"
+                  onclick="location.href='./sobre.html'">SAIBA MAIS</button>
               </div>
             </div>
           </div>
@@ -308,7 +311,9 @@
         </div>
         <!-- direita -->
       </section>
+      <!--
       <hr />
+      <section>
       <div class="container d-flex flex-column align-items-center">
         <h1 class="display-1">NOSSO BLOG!</h1>
 
@@ -321,9 +326,9 @@
             margin-top: 80px;
           "
         >
-          <!-- Coluna da esquerda: dois cards pequenos empilhados -->
+          
           <div class="col-md-6 d-flex flex-column">
-            <!-- Card pequeno 1 -->
+            
             <div
               class="row g-0 border rounded overflow-hidden flex-md-row mb-3 shadow-sm h-md-50 position-relative"
             >
@@ -350,7 +355,7 @@
               </div>
             </div>
 
-            <!-- Card pequeno 2 -->
+            
             <div
               class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm h-md-50 position-relative"
             >
@@ -377,8 +382,8 @@
               </div>
             </div>
           </div>
-
-          <!-- Coluna da direita: card grande com altura total -->
+          
+          
           <div class="col-md-6 d-flex">
             <div class="w-100 d-flex align-items-stretch">
               <div
@@ -406,7 +411,7 @@
             </div>
           </div>
         </div>
-
+</section>-->
         <!--<div class="col-md-6">
             <div></div>
             <div
@@ -441,7 +446,7 @@
             </div>
           </div>-->
       </div>
-      <hr />
+      
       <section>
         <div class="container__faça_parte">
           <h1>FAÇA PARTE!</h1>
@@ -649,7 +654,7 @@
                 <a class="link-body-emphasis me-2" href="#" aria-label="Email">
                   <i class="bi bi-envelope" style="font-size: 1.5rem"></i>
                 </a>
-                <p class="mb-0 fs-5">associacaobarraco@hotmail.com</p>
+                <p class="mb-0 fs-5">associacaobarracogaleriaart@gmail.com</p>
               </div>
 
               <div class="d-flex align-items-center">

@@ -263,6 +263,7 @@
     width: 40%; /* Aumenta para caber a imagem + texto decentemente */
     margin: 0 auto; /* Centraliza a caixa na tela */
     border: 2px solid black;
+    flex-wrap: wrap;
     gap: 20px; /* Espaço entre a imagem e o texto */
     padding: 20px; /* Espaço interno bonito */
 
@@ -474,17 +475,18 @@ header{
     width: 85px;
     height: 80px;
     border-radius: 1rem;
+    transform: translateX(calc(-50% - 225px));
 }
 
 #logo1 {
     display: flex;
     width: 20%;
     height: 100%;
+    margin-right: 200px
 }
 
 .navbar_links {
     display: flex;
-    position: absolute; 
     left: 50%; 
     transform: translateX(-50%); 
 }
@@ -501,9 +503,11 @@ header{
     background-color: blue;
 }
 
-/* Navegação */
+
 
 nav{
+    position: relative;
+    z-index: 1030;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -524,6 +528,52 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
+
+@media (max-width: 991.98px) {
+  #logo1 {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    margin-right: 73px
+}
+
+  #logo { 
+    width: 85px;
+    height: 80px;
+    border-radius: 1rem;
+    transform: none;
+}
+
+  .navbar-toggler {
+    margin-left: auto;
+  }
+
+  .navbar-nav{
+    background-color: #181A1B;
+    width: 100%;
+  }
+
+  .collapse.navbar-collapse.show {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    z-index: 1040;
+    transition: none;
+    
+    min-height: 215px; 
+  }
+
+}
+
+.dropdown-menu .dropdown-item {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+/* Navegação */
+
 
 /* Aplica a fonte Bebas Neue aos títulos */
 h1, h2, h3, h4, h5, h6 {
@@ -584,5 +634,112 @@ body, p, .navbar, .carousel-caption {
     max-width: 300px; /* Largura máxima para cada card */
     flex-shrink: 0; /* Evita que os cards encolham */
 }
+
+@media (max-width: 992px) {
+  /* Ajustar margem da navbar */
+  .navbar {
+    margin-right: 0 !important;
+  }
+
+  /* Reduzir tamanho e centralizar elementos na seção resumo */
+  .container__resumo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .resumo_left,
+  .resumo_right {
+    width: 100%;
+  }
+
+  /* Layout de cards */
+  .container_content {
+    flex-direction: column;
+  }
+
+  .content_esquerda,
+  .content_direita {
+    width: 100%;
+  }
+
+  .container__card {
+    margin-bottom: 2rem;
+  }
+
+  /* Reduzir escala do blog em telas pequenas */
+  .row.text-bg-dark.pt-4.pb-4 {
+    transform: scale(1);
+    margin: 40px 0;
+  }
+
+  /* Ajuste nos controles do carrossel para telas menores */
+  .carousel-control-prev,
+  .carousel-control-next {
+    bottom: 10%;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Título grande do blog em telas muito pequenas */
+  h1.display-1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+.container__faça_parte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 4rem;
+  background-color: #f8f8f8;
+}
+
+.faça_parte_left,
+.faça_parte_right {
+  max-width: 500px;
+}
+
+.faça_parte_left h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.faça_parte_right p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container__faça_parte {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .faça_parte_left,
+  .faça_parte_right {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .faça_parte_right p {
+    text-align: justify;
+  }
+
+  .faça_parte_left h2 {
+    font-size: 1.6rem;
+  }
+
+  .faça_parte_right p {
+    font-size: 1rem;
+  }
+}
+
 
 
