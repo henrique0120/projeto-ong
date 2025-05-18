@@ -23,7 +23,7 @@
 
 <h2 id="colab">🤝 Colaboradores</h2>
 
-Special thank you for all people that contributed for this project.
+Um agradecimento especial a todas as pessoas que contribuíram para este projeto.
 
 <table>
   <tr>
