@@ -5,8 +5,13 @@
 </p>
 
 <p align="center">
-     <a href="https://henrique0120.github.io/projeto-ong/">📱 Visite o projeto</a>
+     <a href="https://henrique0120.github.io/projeto-ong/">📱 Clique e visite o projeto</a>
 </p>
+
+<p align="center">
+     <a href="https://www.youtube.com/watch?v=s8YDak-BkGU">📱 Clique e acesse o vídeo de apresentação do site</a>
+</p>
+
 
 <h2 id="layout">🎨 Layout</h2>
 
@@ -59,5 +64,22 @@ Um agradecimento especial a todas as pessoas que contribuíram para este projeto
         </sub>
       </a>
     </td>
+    <td align="center">
+      <a href="https://github.com/Mrluizitoaway">
+        <img src="https://avatars.githubusercontent.com/u/209256926?v=4" width="100px;" alt="Foto do Luiz Henrique"/><br>
+        <sub>
+          <b>Luiz Henrique</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="">
+        <img src="" width="100px;" alt="Foto do Felipe Veloso"/><br>
+        <sub>
+          <b>Felipe Veloso</b>
+        </sub>
+      </a>
+    </td>
+      
   </tr>
 </table>
