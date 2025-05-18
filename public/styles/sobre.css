@@ -54,7 +54,9 @@ header{
     background-color: blue;
 }
 
-
+.nav-item-doe{
+    background-color: #191EEC;
+}
 
 nav{
     position: relative;

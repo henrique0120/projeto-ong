@@ -54,6 +54,10 @@ header{
     background-color: blue;
 }
 
+.nav-item-doe{
+    background-color: #191EEC;
+}
+
 nav{
     display: flex;
     justify-content: center;
@@ -363,7 +367,7 @@ body, p, .navbar, .carousel-caption {
 }
 
 
-.contribua_right > button{
+.contribua_right > a > button{
     background-color: black;
     color: white;
     border: 1px solid white;
@@ -375,7 +379,7 @@ body, p, .navbar, .carousel-caption {
     transition: background-color 0.3s, color 0.3s;
 }
 
-button:hover {
+.contribua_right > a > button:hover {
     background-color: white;
     color: black;
 }
