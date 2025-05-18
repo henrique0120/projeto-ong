@@ -440,7 +440,7 @@
     text-align: justify;
 }
 
-.faça_parte_cards > .card > .button_card{
+.faça_parte_cards > .card > a > .button_card{
     background-color: black;
     color: white;
     border: 1px solid white;
@@ -515,7 +515,7 @@ header{
     background-color: blue;
 }
 
-.nav-item-doe{
+ul > .nav-item-doe{
     background-color: #191EEC;
 }
 
