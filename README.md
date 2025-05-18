@@ -11,8 +11,9 @@
 <h2 id="layout">🎨 Layout</h2>
 
 <p align="center">
-    <img src="../.github/example.png" alt="Image Example" width="400px">
-    <img src="../.github/example.png" alt="Image Example" width="400px">
+    <img src="assets/Screenshot 1.png" alt="Image Example" width="400px">
+    <img src="assets/Screenshot 2.png" alt="Image Example" width="400px">
+    <img src="assets/Screenshot 3.png" alt="Image Example" width="400px">
 </p>
 
 <h2 id="technologies">💻 Tecnologias</h2>
