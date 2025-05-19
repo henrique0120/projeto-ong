@@ -88,6 +88,14 @@ Um agradecimento especial a todas as pessoas que contribuíram para este projeto
         </sub>
       </a>
     </td>
+    <td align="center">
+      <a href="https://github.com/scalabrini09">
+        <img src="https://avatars.githubusercontent.com/u/212447088?v=4" width="100px;" alt="Foto do Henrique Scalabrini"/><br>
+        <sub>
+          <b>Henrique Scalabrini</b>
+        </sub>
+      </a>
+    </td>
       
   </tr>
 </table>
