@@ -73,10 +73,18 @@ Um agradecimento especial a todas as pessoas que contribuíram para este projeto
       </a>
     </td>
     <td align="center">
-      <a href="">
-        <img src="" width="100px;" alt="Foto do Felipe Veloso"/><br>
+      <a href="https://github.com/damata1914">
+        <img src="https://avatars.githubusercontent.com/u/198926617?v=4" width="100px;" alt="Foto do Felipe Veloso"/><br>
         <sub>
           <b>Felipe Veloso</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/V1ni06">
+        <img src="https://avatars.githubusercontent.com/u/138256143?v=4" width="100px;" alt="Foto do Vinicius dos Santos"/><br>
+        <sub>
+          <b>Vinicius dos Santos</b>
         </sub>
       </a>
     </td>
